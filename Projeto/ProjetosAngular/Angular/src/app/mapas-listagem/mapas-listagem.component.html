@@ -1,0 +1,101 @@
+<h2>Mapas</h2>
+
+<hr/>
+<p>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdn.datatables.net/1.10.16/css/dataTables.bootstrap.min.css'>
+    
+    <div class="col-xs-12 col-sm-4">
+        <br/>
+        <div class="box-filters">
+            <h3>
+                <span>Accesstagearios</span>
+                <span class="pull-right">
+                    <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
+                </span>
+            </h3>
+            
+            <ul class="search-fields show"> 
+                <li>
+                    <div>
+                        Mapa                  
+                        <span class="hasVisible pull-right" data-column="0">
+                            <span class="glyphicon glyphicon-eye-open visible" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-eye-close noVisible" aria-hidden="true"></span>
+                        </span>
+                    </div>
+                    <input class="form-control" type="text" placeholder="Mapa"/>
+                </li>
+                <li>
+                    <div>
+                        Entrada
+                        <span class="hasVisible pull-right" data-column="1">
+                            <span class="glyphicon glyphicon-eye-open visible" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-eye-close noVisible" aria-hidden="true"></span>
+                        </span>
+                    </div>
+                    <input class="form-control" type="text" placeholder="Entrada"/>
+                </li>
+                
+                <li>
+                    <div>
+                        Saida
+                        <span class="hasVisible pull-right" data-column="2">
+                            <span class="glyphicon glyphicon-eye-open visible" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-eye-close noVisible" aria-hidden="true"></span>
+                        </span>
+                    </div>
+                    <input class="form-control" type="text" placeholder="Saida"/>
+                </li>
+                <li>
+                    <div>
+                        Fluxo
+                        <span class="hasVisible pull-right" data-column="3">
+                            <span class="glyphicon glyphicon-eye-open visible" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-eye-close noVisible" aria-hidden="true"></span>
+                        </span>
+                    </div>
+                    <select class="form-control" name="" id="">
+                        <option value=""> - </option>
+                        <option value="Sidney">Remessa</option>
+                        <option value="Singapore">Retorno</option>
+                    </select>
+                </li>
+                <li>
+                    <div>
+                        Data
+                        <span class="hasVisible pull-right" data-column="4">
+                            <span class="glyphicon glyphicon-eye-open visible" aria-hidden="true"></span>
+                            <span class="glyphicon glyphicon-eye-close noVisible" aria-hidden="true"></span>
+                        </span>
+                    </div>
+                    <input class="form-control" type="text" placeholder="Data"/>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-xs-12 col-sm-8">
+        <br/>
+        <div class="box-table">
+            <table id="example" class="display table table-striped table-bordered" cellspacing="0" width="100%">
+                <thead>
+                    <tr>
+                        <th>Mapa</th>
+                        <th>Fluxo</th>
+                        <th>Produto</th>
+                        <th>Entrada</th>
+                        <th>Saida</th>
+                        <th>Modal</th>
+                    </tr>
+                </thead>
+      <tbody *ngFor="let m of mapas">
+          <tr>
+              <td>{{m.numero_mapa}}</td>
+              <td>{{m.fluxo}}</td>
+              <td>{{m.produto}}</td>
+              <td>{{m.banco_entrada}}</td>
+              <td>{{m.banco_saida}}</td>
+              <td>--</td>
+          </tr>
+      </tbody>
+  </table>
