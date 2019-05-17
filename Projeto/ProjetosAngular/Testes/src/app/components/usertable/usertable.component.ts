@@ -1,7 +1,8 @@
 import {Component, OnInit, ViewChild} from '@angular/core';
-import {MatDialog, MatPaginator, MatTableDataSource} from '@angular/material';
+import {MatDialog, MatDialogConfig, MatPaginator, MatTableDataSource} from '@angular/material';
 import {UserService} from '../../services/user.service';
 import {Mapa} from '../../models/user.model';
+import {DialogContentExampleDialog} from './DialogContentExampleDialog';
 
 
 @Component({
@@ -13,6 +14,7 @@ import {Mapa} from '../../models/user.model';
 
 export class UsertableComponent implements OnInit {
 
+  dialogResult: string = '';
 
   @ViewChild(MatPaginator) paginator: MatPaginator;
 
@@ -20,15 +22,14 @@ export class UsertableComponent implements OnInit {
   dataSource = new MatTableDataSource();
   dataSource2 = new MatTableDataSource();
 
-
   value;
-
   fluxo1;
   produto2;
   entrada3;
   saida4;
 
   mapaPreenchido = new Mapa();
+
 
   ngOnInit() {
     this.executaAi(this.mapaPreenchido);
@@ -39,14 +40,26 @@ export class UsertableComponent implements OnInit {
   constructor(private userService: UserService, public dialog: MatDialog) {
   }
 
-  openDialog(modal: string) {
-    const dialogRef = this.userService.getModal(modal);
+  openDialog(mapa: Mapa) {
 
-    dialogRef.subscribe(result => {
+
+    const dialogConfig = new MatDialogConfig();
+
+    dialogConfig.disableClose = true;
+    dialogConfig.autoFocus = true;
+
+
+    dialogConfig.data = {
+      modal: mapa,
+    };
+    console.log(dialogConfig);
+    const dialogRef = this.dialog.open(DialogContentExampleDialog, dialogConfig);
+
+    dialogRef.afterClosed().subscribe(result => {
       console.log(`Dialog result: ${result}`);
     });
   }
-  /*________________________________________________*/
+
 
   sample(mapa: string) {
     this.userService.getMapaByName(mapa)
@@ -55,16 +68,19 @@ export class UsertableComponent implements OnInit {
             console.log(dados);
             this.dataSource2 = new MatTableDataSource(dados);
             this.dataSource2.paginator = this.paginator;
+            console.log(this.dataSource2);
           }
         }
       );
   }
 
   executaAi(mapa: Mapa) {
+
+    console.log('sdasdsa');
     this.userService.getMapaByParan(mapa)
       .subscribe(dados => {
+          console.log(dados);
           if (dados != null) {
-            console.log(dados);
             this.dataSource = new MatTableDataSource(dados);
             this.dataSource.paginator = this.paginator;
           }
@@ -81,6 +97,8 @@ export class UsertableComponent implements OnInit {
 
     this.executaAi(mapa);
 
+
   }
 
 }
+

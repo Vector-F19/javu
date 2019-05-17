@@ -18,11 +18,6 @@ export class UserService {
 
   public getMapaByParan(mapa: Mapa) {
 
-    return this.http.post<Mapa[]>('http://localhost:8888/api/mapas/parans' , mapa);
-  }
-
-  public getModal(modal: string) {
-
-    return this.http.get<Mapa[]>('http://localhost:8888/api/mapas/modal/' +  modal);
+    return this.http.post<Mapa[]>('http://localhost:8888/api/mapas/parans', mapa);
   }
 }

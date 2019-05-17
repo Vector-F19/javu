@@ -51,8 +51,10 @@
           </ng-container>
 
           <ng-container matColumnDef="modal">
-            <th mat-header-cell *matHeaderCellDef> </th>
-            <button mat-button (click)="openDialog()" tabindex="-1" mat-cell *matCellDef="let mapaPreenchido">Detalhes</button>
+            <th mat-header-cell *matHeaderCellDef></th>
+            <button mat-button mat-cell *matCellDef="let mapaPreenchido" (click)="openDialog(mapaPreenchido.modal)"
+                    tabindex="-1">Detalhes
+            </button>
           </ng-container>
 
           <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
@@ -72,7 +74,7 @@
           <div class="sty">
 
             <mat-form-field class="example-full-width">
-              <input matInput placeholder="Fluxo" [(ngModel)]='fluxo1' >
+              <input matInput placeholder="Fluxo" [(ngModel)]='fluxo1'>
             </mat-form-field>
           </div>
 
@@ -86,14 +88,14 @@
           <div class="sty">
 
             <mat-form-field class="example-full-width">
-              <input matInput placeholder="Entrada" [(ngModel)]='entrada3' >
+              <input matInput placeholder="Entrada" [(ngModel)]='entrada3'>
             </mat-form-field>
           </div>
 
           <div class="sty">
 
             <mat-form-field class="example-full-width">
-              <input matInput placeholder="Saida" [(ngModel)]='saida4' >
+              <input matInput placeholder="Saida" [(ngModel)]='saida4'>
             </mat-form-field>
 
           </div>
@@ -141,8 +143,10 @@
                 </ng-container>
 
                 <ng-container matColumnDef="modal">
-                  <th mat-header-cell *matHeaderCellDef> </th>
-                  <button mat-button (click)="openDialog()" tabindex="-1" mat-cell *matCellDef="let mapaPreenchido">Detalhes</button>
+                  <th mat-header-cell *matHeaderCellDef></th>
+                  <button mat-button mat-cell *matCellDef="let mapaPreenchido"
+                          (click)="openDialog(mapaPreenchido.modal)" tabindex="-1">Detalhes
+                  </button>
                 </ng-container>
 
                 <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>

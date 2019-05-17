@@ -10,6 +10,7 @@ import { UsertableComponent } from './components/usertable/usertable.component';
 import { HttpClientModule } from '@angular/common/http';
 import{ MatInputModule,MatProgressSpinnerModule,MatSortModule,
 MatPaginatorModule,MatTableModule }from '@angular/material';
+import { DialogContentExampleDialog } from './components/usertable/DialogContentExampleDialog';
 
 import { UserService } from './services/user.service';
 import {MatFormFieldModule} from '@angular/material/form-field';
@@ -26,6 +27,7 @@ import {FormsModule} from '@angular/forms';
   declarations: [
     AppComponent,
     UsertableComponent,
+    DialogContentExampleDialog
   ],
   imports: [
     BrowserModule,
@@ -42,9 +44,10 @@ import {FormsModule} from '@angular/forms';
     MatButtonModule,
     MatToolbarModule,
     MatDialogModule,
-    FormsModule,
+    FormsModule
   ],
   providers: [UserService],
+  entryComponents:[DialogContentExampleDialog],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
