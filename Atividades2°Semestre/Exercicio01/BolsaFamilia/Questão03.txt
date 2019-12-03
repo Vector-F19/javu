@@ -1,0 +1,15 @@
+Crie um projeto Java chamado BolsaFamilia.
+a) Pergunte o nome do Responsável pela familia
+b) Pergunte a cidade onde a família mora
+c) Pergunte a quantidade de filhos menores de 18 anos
+d) Pergunte a quantidade de filhos PNE
+e) Pergunte a quantidade de pessoas maiores de 60 anos
+f) Exiba uma frase informando sobre a Bolsa Família como a seguir:
+
+A família do responsável A vai receber um total de R$B por mês
+- Valor pelos menores de 18 anos: C
+- Valor pelos PNE: D
+- Valor pelos idosos: E
+Cidade: F
+
+OBS: Valor de C: 12,50 p/ filho. Valor de D: 14,00 p/ filho. Valor de E: 10 p/ idoso. Valor de B: Soma C+D+E.
