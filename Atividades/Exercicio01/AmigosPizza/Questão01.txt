@@ -1,0 +1,5 @@
+1. Crie um projeto Java chamado AmigosPizza.
+a) Pergunte quantos amigos vão rachar a pizza.
+b) Pergunte o sabor da pizza
+c) Pergunte o valor da pizza
+d) Exiba a frase "A pizza de SABOR custa R$X e cada amigo vai pagar R$Y"
