@@ -1,0 +1,5 @@
+ Crie um projeto Java que:
+a) Solicite o salário bruto do usuário
+b) Baseado na tabela do INSS, exibir o valor de desconto de INSS que o usuário sofrerá. Baseie-se na tabela disponível em http://www.guiatrabalhista.com.br/guia/tabela_inss_empregados.htm
+c) Caso o salário bruto seja maior que R$5.645,80, o desconto de INSS continua sendo 11%
+d) Ao final, exiba a frase "Seu salário bruto é R$X e seu desconto de INSS será R$Y"

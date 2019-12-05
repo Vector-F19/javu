@@ -1,0 +1,18 @@
+Crie um projeto em Java que:
+
+a) Solicite o nome do produto
+   > Caso o usuário informe "mamão" exibir "Produto não permitido!" e não faça mais nada.
+
+b) Solicite o valor de compra de um produto
+   > Caso o usuário informe 0 ou negativo, exibir "Sê é loko? Não existe preço 0 ou negativo!" e não faça mais nada.
+
+c) Solicite a porcentagem de lucro desejada na venda.
+   > Se o usuário informar qualquer valor fora do intervalo entre 0 e 200, exibir "Porcentagem de lucro inválida! Digite de 0 a 200" e não faça mais nada
+
+d) Exiba "O produto X foi comprado por R$Y e será vendido por R$Z".
+
+OBS: os operadores && e || funcionam 100% como em JavaScript
+
+Exemplos de valores:
+ Compra: 100, lucro 20, venda: 120
+ Compra: 1000, lucro 100, venda: 2000

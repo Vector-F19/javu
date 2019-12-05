@@ -1,0 +1,10 @@
+Crie um projeto em Java que:
+a) Solicite a média mínima para aprovação na escola
+b) Solicite a frequência mínima para aprovação na escola
+c) Pergunte 2 notas de um aluno
+d) Pergunte a frequência de um aluno
+e) Calcule a média do aluno e, baseado nela e na frequência e nos critérios em a) e b), exiba uma dessas frases:
+  - "Aprovado! É nóis, mano!"
+  - "Reprovado só por nota. Vacilão!"
+  - "Reprovado só por frequência. Sê loko cachoeira?!?"
+  - "Reprovado geral (nota e frequência)"

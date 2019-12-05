@@ -1,0 +1,10 @@
+Crie um projeto em Java que:
+a) Solicite o valor de uma pizza
+b) Solicite o sabor da pizza
+c) Solicite a quantidade de pessoas que irá "rachar" a conta
+d) Solicite o valor máximo que as pessoas aceitam "rachar"
+e) Caso o valor da pizzia seja possível de "rachar", Exibir
+   "A pizza de SABOR será dividida entre X pessoas. R$VALOR p/ cada"
+f) Caso o "racha" seja impossível exibir
+   "Deu ruim no racha. A pizza deveria custar no máximo X"
+   (onde X é o valor máximo que uma pizza pode custar)

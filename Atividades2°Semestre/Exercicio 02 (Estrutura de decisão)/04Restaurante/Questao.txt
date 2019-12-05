@@ -1,0 +1,5 @@
+ Crie um projeto em Java que:
+a) Solicite o valor da conta do restaurante
+b) Pergunte "Você vai pagar os 10%? S para Sim ou Qualquer coisa p/ Não"
+c) Calcular o valor total da conta. Caso o usuário tenha informado 1 na pergunta anterior, o valor é a conta + 10%
+d) Exibir "Total a pagar R$X"

@@ -1,0 +1,13 @@
+Crie um programa em Java chamado "AnaliseSaude".
+Ao ser executado, ele:
+a) Solicita o nome do usuário
+b) Pergunta o que o usuário costuma comer com a seguinte pergunta:
+    O que você mais costuma comer?
+    C - Carnes
+    V - Verduras
+    L - Legumes
+    F - Frutas
+    T - Fast Food
+    NDA - Nem queira saber
+c) Se ele mais come Carnes, exiba "Dieta rica em proteína". Se Verduras ou Legumes, "Dieta rica em vitaminas". Se Frutas, 
+"Dieta rica em fibras". Se Fast Food, "Dieta rica em doenças". Se nenhuma, "Só Jesus na causa!".
